@@ -18,7 +18,7 @@ include_once __DIR__ . '/functions.php';
             <button type="submit" name="generate">submit</button>
         </div>
 
-        <div class="my-2"> password:<?= $password; ?></div>
+        <div class="my-2"> password: <?= $password; ?></div>
 
         <div class="my-2">
             consenti ripetizioni di uno o più caratteri:
