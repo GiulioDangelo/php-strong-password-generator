@@ -26,4 +26,8 @@ function getRandomCharacters($array, $count) {
 };
 
 
+
+if ($letters == "on") {
+    var_dump($lower_letter);
+}
 ?>
