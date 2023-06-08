@@ -21,13 +21,13 @@ $special_char = ["!","@", "#", "$", "%", "^", "&", "*", "-", "+", "/", "?"];
 
 
 function getRandomCharacters($array, $count) {
-    shuffle($array);
-    return array_slice($array, 0, $count);
+    $temp = rand($array);
+    return ($array[$temp]);
 };
 
 
 
-if ($letters == "on") {
+if ($letters == "on" || $numbers == "on" || $simbols == "on" ) {
     var_dump($lower_letter);
 }
 ?>
