@@ -13,11 +13,26 @@ include_once __DIR__ . '/functions.php';
 </head>
 <body>
     <form action="">
-        <input type="number" name="length">
-        <button type="submit">submit</button>
+        <div>
+            <input type="number" name="length">
+            <button type="submit">submit</button>
+        </div>
+
+        <?= implode("", getRandomCharacters($all_char , $length)); ?>
+
+        <div class="my-2">
+            consenti ripetizioni di uno o più caratteri:
+            <input class="form-check-input" type="radio" name="yes">
+            <input class="form-check-input" type="radio" name="no">
+        </div>
+
+        <div>
+            <div><input type="checkbox" name="letters">lettere</div>
+            <div><input type="checkbox" name="numbers">numeri</div>
+            <div><input type="checkbox" name="simbols">simboli</div>
+        </div>
     </form>
 
-    <?= implode("", getRandomCharacters($all_char , $length)); ?>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>

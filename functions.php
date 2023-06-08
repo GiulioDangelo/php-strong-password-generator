@@ -3,6 +3,11 @@
 $length = $_GET['length'] ?? '';
 $length = (int) $length;
 
+$letters = $_GET['letters'] ?? '';
+$numbers = $_GET['numbers'] ?? '';
+$simbols = $_GET['simbols'] ?? '';
+
+
 // //character
 $all_char = str_split('abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()');
 
@@ -18,5 +23,7 @@ $special_char = ["!","@", "#", "$", "%", "^", "&", "*", "-", "+", "/", "?"];
 function getRandomCharacters($array, $count) {
     shuffle($array);
     return array_slice($array, 0, $count);
-}
+};
+
+
 ?>
