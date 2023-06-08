@@ -43,9 +43,9 @@ if (isset($_GET['generate'])) {
     if ($simbols) {
         $password .= getRandomCharacters($special_char, $length);
     }
-    else{
-        $password .= getRandomCharacters($all_char, $length);
-    }
+    // else{
+    //     $password .= getRandomCharacters($all_char, $length);
+    // }
 } 
 
 ?>
