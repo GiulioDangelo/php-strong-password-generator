@@ -15,15 +15,14 @@ include_once __DIR__ . '/functions.php';
     <form action="">
         <div>
             <input type="number" name="length">
-            <button type="submit">submit</button>
+            <button type="submit" name="generate">submit</button>
         </div>
 
-        <div class="my-2"> password:<?= getRandomCharacters($all_char , $length); ?></div>
+        <div class="my-2"> password:<?= $password; ?></div>
 
         <div class="my-2">
             consenti ripetizioni di uno o più caratteri:
-            <input class="form-check-input" type="radio" name="yes">
-            <input class="form-check-input" type="radio" name="no">
+            <input class="form-check-input" type="checkbox" name="repeat">
         </div>
 
         <div>
