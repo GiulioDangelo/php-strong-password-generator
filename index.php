@@ -12,7 +12,7 @@ include_once __DIR__ . '/functions.php';
     <title>Document</title>
 </head>
 <body>
-    <form action="">
+    <form method="GET">
         <div>
             <input type="number" name="length">
             <button type="submit" name="generate">submit</button>
@@ -22,13 +22,13 @@ include_once __DIR__ . '/functions.php';
 
         <div class="my-2">
             consenti ripetizioni di uno o più caratteri:
-            <input class="form-check-input" type="checkbox" name="repeat">
+            <input class="form-check-input" type="checkbox" name="repeat" value="off">
         </div>
 
         <div>
-            <div><input type="checkbox" name="letters">lettere</div>
-            <div><input type="checkbox" name="numbers">numeri</div>
-            <div><input type="checkbox" name="simbols">simboli</div>
+            <div><input type="checkbox" checked name="letters">lettere</div>
+            <div><input type="checkbox" checked name="numbers">numeri</div>
+            <div><input type="checkbox" checked name="simbols">simboli</div>
         </div>
     </form>
 
